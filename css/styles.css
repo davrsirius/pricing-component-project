@@ -22,16 +22,29 @@ body {
   line-height: 28px;
   background-color: #F7F7FE;
   color: #6e728e;
-  background-image: url(../img/lines-bg-left.svg), 
-  url(../img/lines-bg-right.svg);
-  background-position: left -120px bottom -260px, 
-  top -100px right -100px;
+  background-image: url(../img/lines-bg-left.svg),
+    url(../img/lines-bg-right.svg);
+  background-position: left -120px bottom -260px,
+    top -100px right -100px;
   background-repeat: no-repeat;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -46,6 +59,55 @@ img {
   margin-right: auto;
 }
 
+/* BUTTON */
+
+.button {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1.4px;
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  /* transition: background-color 0.3s ease, color 0.3s ease, background-image 0.3s ease,
+  border 0.3s ease; */
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.button-primary {
+  background-color: #696EDD;
+  background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  color: #fff;
+
+}
+
+.button-white {
+  color: #696EDD;
+  background-color: #fff;
+}
+
+
+.button-primary:hover {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #696EDD;
+  color: #696EDD;
+}
+
+.button-white:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
 
 /* MAIN CONTENT */
 .main-content {
@@ -53,13 +115,147 @@ img {
 }
 
 
-/* RETINA BACKGROUNDS */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+/* PAGE */
+.page {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 32px;
+  line-height: auto;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.pricing {
+  width: 100%;
 
 }
+
+.pricing-inner {
+  display: flex;
+  align-items: center;
+}
+
+.pricing-plan {
+  width: 350px;
+  flex-grow: 1;
+  padding: 32px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pricing-plan:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.pricing-plan:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.pricing-plan-best {
+  background-color: rgb(68, 134, 227);
+  padding-top: 55px;
+  padding-bottom: 55px;
+  border-radius: 10px;
+  background-color: #696EDD;
+  background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  color: #fff;
+
+}
+
+.pricing-plan-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.pricing-plan-price {
+  font-size: 72px;
+  line-height: 71px;
+  letter-spacing: -2.16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.pricing-plan-currency {
+  font-size: 40px;
+  letter-spacing: -1.2px;
+  margin-right: 8px;
+}
+
+.pricing-plan-features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(110, 114, 142, 0.25);
+  margin-bottom: 32px;
+}
+
+.pricing-plan-feature {
+  border-bottom: 1px solid rgba(110, 114, 142, 0.25);
+  padding: 12px;
+}
+
+.pricing-plan-best .pricing-plan-features {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.pricing-plan-best .pricing-plan-feature {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RETINA BACKGROUNDS */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}
