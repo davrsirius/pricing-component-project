@@ -20,7 +20,7 @@ body {
   font-weight: bold;
   font-size: 15px;
   line-height: 28px;
-  background-color: #F7F7FE;
+  background-color: #f7f7fe;
   color: #6e728e;
   background-image: url(../img/lines-bg-left.svg),
     url(../img/lines-bg-right.svg);
@@ -207,11 +207,11 @@ img {
 }
 
 .pricing-plan-best .pricing-plan-features {
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-color:rgba(255, 255, 255, 0.25);
 }
 
 .pricing-plan-best .pricing-plan-feature {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 
