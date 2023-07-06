@@ -16,11 +16,17 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 28px;
+  background-color: #F7F7FE;
+  color: #6e728e;
+  background-image: url(../img/lines-bg-left.svg), 
+  url(../img/lines-bg-right.svg);
+  background-position: left -120px bottom -260px, 
+  top -100px right -100px;
+  background-repeat: no-repeat;
 }
 
 img {
@@ -33,9 +39,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1100px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin-left: auto;
   margin-right: auto;
 }
